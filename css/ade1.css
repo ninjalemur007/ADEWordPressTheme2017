@@ -1,0 +1,128 @@
+/*
+ * ADE1
+ */
+
+.ubermenu .ubermenu-colgroup .ubermenu-column, .ubermenu .ubermenu-custom-content-padded, .ubermenu .ubermenu-nonlink, .ubermenu .ubermenu-retractor, .ubermenu .ubermenu-submenu-padded, .ubermenu .ubermenu-submenu-type-stack>.ubermenu-item-normal>.ubermenu-target, .ubermenu .ubermenu-target, .ubermenu .ubermenu-widget, .ubermenu-responsive-toggle {
+  padding: 10px 20px;
+}
+
+.ubermenu .ubermenu-search input.ubermenu-search-input {padding: 4px 2vw 4px 15px;}
+
+.ubermenu-skin-ade1 {
+    /* general nav text  */
+  font-size: 14px;
+  color: #ffffff;
+    z-index: 10000;
+}
+.ubermenu-skin-ade1 .ubermenu-target {
+    /* general nav link text  */
+  color: #ffffff;
+}
+.ubermenu-skin-ade1 .ubermenu-target-description {
+  color: #aaaaaa;
+}
+.ubermenu-skin-ade1.ubermenu-responsive-toggle {
+  background: #022169;
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.ubermenu-skin-ade1.ubermenu-responsive-toggle:hover {
+  background: #022169;
+  color: #ffffff;
+}
+.ubermenu-skin-ade1 {
+    /* general nav-bar background */
+  border: none;
+  background: rgba(2,33,105,0.85);
+}
+.ubermenu-skin-ade1 .ubermenu-item-level-0.ubermenu-current-menu-item > .ubermenu-target,
+.ubermenu-skin-ade1 .ubermenu-item-level-0.ubermenu-current-menu-parent > .ubermenu-target,
+.ubermenu-skin-ade1 .ubermenu-item-level-0.ubermenu-current-menu-ancestor > .ubermenu-target {
+  color: #ffffff;
+  background: #022169;
+}
+.ubermenu-skin-ade1 .ubermenu-item.ubermenu-item-level-0 > .ubermenu-highlight {
+  color: #ffffff;
+  background: transparent;
+}
+.ubermenu-skin-ade1.ubermenu-vertical .ubermenu-item-level-0 > .ubermenu-target {
+  background: #022169;
+}
+.ubermenu-skin-ade1 .ubermenu-item-level-0 > .ubermenu-target {
+  /* top-level nav link text  */
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-left: none;
+}
+.ubermenu-skin-ade1 .ubermenu-item-level-0:first-child > .ubermenu-target {
+  box-shadow: none;
+}
+.ubermenu-skin-ade1 .ubermenu-item-level-0:hover > .ubermenu-target,
+.ubermenu-skin-ade1 .ubermenu-item-level-0.ubermenu-active > .ubermenu-target {
+  background: rgba(1,17,54,0.90);
+  color: #f6b221;
+}
+.ubermenu-skin-ade1 .ubermenu-item-level-0 > .ubermenu-submenu-type-stack > .ubermenu-item > .ubermenu-target {
+  color: #ffffff;
+}
+.ubermenu-skin-ade1 .ubermenu-item-level-0 > .ubermenu-submenu-type-stack > .ubermenu-item > .ubermenu-target:hover {
+  color: #f6b221;
+}
+.ubermenu-skin-ade1 .ubermenu-submenu.ubermenu-submenu-drop {
+  background: rgba(1,17,54,0.90);
+  border: none;
+  width: 250px;
+}
+.ubermenu-skin-ade1.ubermenu-horizontal .ubermenu-item-level-0 > .ubermenu-submenu-drop {
+  border-top: none;
+}
+.ubermenu-skin-ade1 .ubermenu-tab-content-panel {
+  background: #f9f9f9;
+}
+.ubermenu-skin-ade1 .ubermenu-submenu,
+.ubermenu-skin-ade1 .ubermenu-submenu .ubermenu-target {
+  color: #ffffff;
+}
+.ubermenu-skin-ade1 .ubermenu-submenu .ubermenu-highlight {
+  color: #f6b221;
+}
+.ubermenu-skin-ade1 .ubermenu-submenu .ubermenu-target:hover,
+.ubermenu-skin-ade1 .ubermenu-submenu .ubermenu-active > .ubermenu-target {
+  color: #f6b221;
+}
+.ubermenu-skin-ade1 .ubermenu-submenu .ubermenu-target > .ubermenu-target-description {
+  color: #e5e7ea;
+}
+.ubermenu-skin-ade1 .ubermenu-submenu .ubermenu-active > .ubermenu-target > .ubermenu-target-description {
+  color: #e5e7ea;
+}
+.ubermenu-skin-ade1 .ubermenu-submenu .ubermenu-item-header > .ubermenu-target {
+  font-weight: bold;
+  color: #ffffff;
+}
+.ubermenu-skin-ade1 .ubermenu-submenu .ubermenu-item-header.ubermenu-has-submenu-stack > .ubermenu-target {
+  border-bottom: 1px solid #e9e9e9;
+}
+.ubermenu-skin-ade1 .ubermenu-submenu .ubermenu-item-header > .ubermenu-target:hover {
+  color: #f6b221;
+}
+.ubermenu-skin-ade1 .ubermenu-submenu .ubermenu-current-menu-item > .ubermenu-target {
+  color: #ffffff;
+  background: transparent;
+}
+.ubermenu-nojs.ubermenu-skin-ade1 .ubermenu-submenu .ubermenu-tabs .ubermenu-tab:hover > .ubermenu-target,
+.ubermenu-skin-ade1 .ubermenu-submenu .ubermenu-tab.ubermenu-active > .ubermenu-target {
+  background: #b2b7c2;
+  color: #011136;
+}
+.ubermenu-skin-ade1 .ubermenu-tabs-group,
+.ubermenu-skin-ade1 .ubermenu-tab > .ubermenu-target,
+.ubermenu-skin-ade1 .ubermenu-tab-content-panel {
+  border-color: #eeeeee;
+}
+.ubermenu-skin-ade1 .ubermenu-submenu-drop {
+  border-bottom-width: 3px;
+}
