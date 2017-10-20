@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div id="content" class="col-xs-12" aria-labelledby="page_title" >
-    <div id="main" role="main" class="appcenter col-xs-12 col-sm-9"  title="main content">
+    <div id="main" role="main" class="appcenter col-xs-12 col-sm-9"  >
             <div id="pagetitle">
                 <h2 id="page_title">Archive &mdash; <?php the_archive_title(); ?></h2>
                 <br />
@@ -65,8 +65,8 @@
                     </article>
                     <!-- end #post-## -->
                 <?php endwhile; ?>
-            	<div class="nav-previous"><?php next_posts_link(__('<span class="meta-nav">&laquo;</span> Older posts', 'ade-theme-2016')) ?></div>
-	<div class="nav-next"><?php previous_posts_link(__('Newer posts <span class="meta-nav">&raquo;</span>', 'ade-theme-2016')) ?></div>
+            	<div class="nav-previous"><?php next_posts_link(__('<span class="meta-nav">&laquo;</span> Older posts', 'azdeptofed')) ?></div>
+	<div class="nav-next"><?php previous_posts_link(__('Newer posts <span class="meta-nav">&raquo;</span>', 'azdeptofed')) ?></div>
 </div>
 
 <?php get_template_part( 'page-templates/blog', 'sidebar' ); ?>

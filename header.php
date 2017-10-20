@@ -16,7 +16,7 @@
 <!-- BEGIN dataLayer for use w/ Google Tag Manager -->
 	<script>
 		dataLayer = [{
-			'theme' : 'ADETheme2016'
+			'theme' : 'azdeptofed'
 		}];
 	</script>
 <!-- END dataLayer for use w/ Google Tag Manager -->
@@ -33,7 +33,7 @@
 	$twitter_desc = strip_tags( $twitter_desc );
 	$twitter_thumbs = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), full );
 	$twitter_thumb = $twitter_thumbs[0];
-	if(!$twitter_thumb) {$twitter_thumb = 'http://www.azed.gov/wp-content/themes/ADETheme2016/includes/ade_seal.png'; }
+	if(!$twitter_thumb) {$twitter_thumb = 'http://www.azed.gov/wp-content/themes/azdeptofed/includes/ade_seal.png'; }
 	?>
 <meta name="twitter:card" content="summary" />
 <meta name="twitter:url" content="<?php echo $twitter_url; ?>" />
@@ -53,7 +53,7 @@
 	$facebook_desc = strip_tags( $facebook_desc );
 	$facebook_thumbs = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), full );
 	$facebook_thumb = $facebook_thumbs[0];
-	if(!$facebook_thumb) {$facebook_thumb = 'http://www.azed.gov/wp-content/themes/ADETheme2016/includes/ade_seal.png'; }
+	if(!$facebook_thumb) {$facebook_thumb = 'http://www.azed.gov/wp-content/themes/azdeptofed/includes/ade_seal.png'; }
 	?>
 <meta property="og:url" content="<?php echo $facebook_url; ?>" />
 <meta property="og:type" content="<?php echo $facebook_type; ?>" />

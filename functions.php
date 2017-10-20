@@ -3,7 +3,7 @@ if ( ! isset( $content_width ) ) {
 	$content_width = 500; /* pixels */
 }
 
-if ( ! function_exists( 'ade_theme_2016_setup' ) ) :
+if ( ! function_exists( 'azdeptofed_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -11,15 +11,15 @@ if ( ! function_exists( 'ade_theme_2016_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function ade_theme_2016_setup() {
+function azdeptofed_setup() {
 
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
 	 * If you're building a theme based on ADE Theme 2016, use a find and replace
-	 * to change 'ade-theme-2016' and 'ade_theme_2016' and anything else that uses the words "ade and theme and 2016" to the name of your theme in all the template files
+	 * to change 'azdeptofed' and 'azdeptofed' and anything else that uses the words "ade and theme and 2016" to the name of your theme in all the template files
 	 */
-	load_theme_textdomain( 'ade-theme-2016', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'azdeptofed', get_template_directory() . '/languages' );
 
 
 	/*
@@ -39,8 +39,8 @@ function ade_theme_2016_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'master' => __( 'MasterMenu', 'ade-theme-2016' ),
-    'secondary' => __( 'Secondary Menu', 'ade-theme-2016' )
+		'master' => __( 'MasterMenu', 'azdeptofed' ),
+    'secondary' => __( 'Secondary Menu', 'azdeptofed' )
     ) );
 
 	/*
@@ -60,23 +60,23 @@ function ade_theme_2016_setup() {
 	) );
 
 	// Setup the WordPress core custom background feature.
-//	add_theme_support( 'custom-background', apply_filters( 'ade_theme_2016_custom_background_args', array(
+//	add_theme_support( 'custom-background', apply_filters( 'azdeptofed_custom_background_args', array(
 //		'default-color' => 'ffffff',
 //		'default-image' => '',
 //	) ) );
 }
-endif; // ade_theme_2016_setup
-add_action( 'after_setup_theme', 'ade_theme_2016_setup' );
+endif; // azdeptofed_setup
+add_action( 'after_setup_theme', 'azdeptofed_setup' );
 
 
 
 /**
  * Register widget areas
 **/
-function ade_theme_2016_widgets_init() {
+function azdeptofed_widgets_init() {
     register_sidebar( array(
-				'name'          => __( 'Static Page Sidebar', 'ade-theme-2016' ),
-		    'description'   => __('Widget area for use with Static Page w/ Right Sidebar page template','ade-theme-2016'),
+				'name'          => __( 'Static Page Sidebar', 'azdeptofed' ),
+		    'description'   => __('Widget area for use with Static Page w/ Right Sidebar page template','azdeptofed'),
 				'id'            => 'static-sidebar',
 				'description'   => '',
 				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
@@ -85,14 +85,14 @@ function ade_theme_2016_widgets_init() {
 				'after_title'   => '</h1>',
 		) );
     register_sidebar( array(
-        'name'          => __( 'Default Blog Sidebar Area', 'ade-theme-2016' ),
-        'description'   => __( 'Widget area for use with Blog Page with Sidebar page template.', 'ade-theme-2016'),
+        'name'          => __( 'Default Blog Sidebar Area', 'azdeptofed' ),
+        'description'   => __( 'Widget area for use with Blog Page with Sidebar page template.', 'azdeptofed'),
         'id'            => 'blog-sidebar',
         'before_widget' => '<aside>',
         'after_widget'  => '</aside>',
     ) ) ;
 }
-add_action( 'widgets_init', 'ade_theme_2016_widgets_init' );
+add_action( 'widgets_init', 'azdeptofed_widgets_init' );
 
 
 
@@ -362,7 +362,7 @@ function modal_content($atts, $content = null) {
     extract(shortcode_atts(array(
         'id' => 'content-id',
         ), $atts));
-    return '<div tabindex="0" class="modalbox modalboxview" title="modal window" id="modalcontent_'.$id.'"><div id="closemodal" class="closex" title="close modal window" tabindex="0"><img src="'. get_theme_root_uri() .'/ADETheme2016/includes/xclose-75opacity.png" class="ximage" /></div>' .do_shortcode($content). '</div>';
+    return '<div tabindex="0" class="modalbox modalboxview" title="modal window" id="modalcontent_'.$id.'"><div id="closemodal" class="closex" title="close modal window" tabindex="0"><img src="'. get_theme_root_uri() .'/azdeptofed/includes/xclose-75opacity.png" class="ximage" /></div>' .do_shortcode($content). '</div>';
 }
 add_shortcode('modalcontent', 'modal_content');
 /* Use like this --> [modalcontent id="word"]content goes here[/modalcontent] */
@@ -375,7 +375,7 @@ function floating_modal_content($atts, $content = null) {
         'top' => '25%',
         'left' => '25%',
         ), $atts));
-    return '<div tabindex="0" class="modalbox floatingbox modalboxview" title="modal window" style="width: ' . $width .'; height: ' . $height .'; top: ' . $top . '; left: '. $left . ';" id="modalcontent_'.$id.'"><div id="closemodal" class="closex" title="close modal window" tabindex="0"><img src="'. get_theme_root_uri() .'/ADETheme2016/includes/xclose-75opacity.png" class="ximage" /></div>' .do_shortcode($content) . '</div><div class="grayout"></div>';
+    return '<div tabindex="0" class="modalbox floatingbox modalboxview" title="modal window" style="width: ' . $width .'; height: ' . $height .'; top: ' . $top . '; left: '. $left . ';" id="modalcontent_'.$id.'"><div id="closemodal" class="closex" title="close modal window" tabindex="0"><img src="'. get_theme_root_uri() .'/azdeptofed/includes/xclose-75opacity.png" class="ximage" /></div>' .do_shortcode($content) . '</div><div class="grayout"></div>';
 }
 add_shortcode('floating-modalcontent', 'floating_modal_content');
 
@@ -388,7 +388,7 @@ function create_table($atts, $content = null) {
         'width' => '100%',
         ), $atts));
 
-    return '<div class="table-responsive"><table class="adethemetable table" style="width:' . $width . ';"><caption>' . $title . '</caption>' . do_shortcode($content) .'</table></div>';
+    return '<div class="table-responsive"><table class="ThemeADEtable table" style="width:' . $width . ';"><caption>' . $title . '</caption>' . do_shortcode($content) .'</table></div>';
 }
 add_shortcode('addtable', 'create_table');
 
@@ -566,19 +566,20 @@ function get_excerpt( $count ) {
 /**
 Insert relative URL
 **/
-function relativeLink($atts, $content = null) {
+function relative_link($atts, $content = null) {
     extract(shortcode_atts(array(
         'url' => '',
+				'target' => '',
         ), $atts));
     if( strpos($url, ":") > 0 )  {
-       return '<a href="' . $url . '">'  . do_shortcode($content) . '</a>';
+       return '<a href="' . $url . '" target="' . $target .'">'  . do_shortcode($content) . '</a>';
     } elseif ( strpos($url, "/") ===  0 ) {
-        return '<a href="' . get_site_url() . $url . '">'  . do_shortcode($content) . '</a>';
+        return '<a href="' . get_site_url() . $url . '" target="' . $target .'">'  . do_shortcode($content) . '</a>';
     } else {
-       return '<a href="' . get_site_url() . '/' .  $url . '">'  . do_shortcode($content) . '</a>';
+       return '<a href="' . get_site_url() . '/' .  $url . '" target="' . $target .'">'  . do_shortcode($content) . '</a>';
     }
 }
-add_shortcode('link', 'relativeLink');
+add_shortcode('link', 'relative_link');
 
 
 
@@ -729,9 +730,9 @@ function add_template_data( $column ) { //show the page template
 /**
   Enqueue styles and js files
 **/
-function ade_theme_2016_theme_scripts(){
+function azdeptofed_theme_scripts(){
   wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/includes/bootstrap/css/bootstrap.min.css', array(), '3.3.4', 'all' );
-  wp_enqueue_style( 'ade-theme-2016-style', get_stylesheet_uri(), array(), '1.8.2', 'all' );
+  wp_enqueue_style( 'azdeptofed-style', get_stylesheet_uri(), array(), '1.8.2', 'all' );
   wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/includes/bootstrap/js/bootstrap.min.js', array( 'jquery' ), '3.3.4', true );
   wp_enqueue_style('fontawesome', get_template_directory_uri() . '/includes/fontawesome/css/font-awesome.min.css');
   wp_deregister_script('jquery');
@@ -740,6 +741,6 @@ function ade_theme_2016_theme_scripts(){
 	wp_enqueue_script('twitter-setup', get_template_directory_uri() . '/js/twitter-setup.js', array(), false, true );
 	wp_enqueue_script('facebook-setup', get_template_directory_uri() . '/js/facebook-setup.js', array(), false, true );
 }
-add_action( 'wp_enqueue_scripts', 'ade_theme_2016_theme_scripts' );
+add_action( 'wp_enqueue_scripts', 'azdeptofed_theme_scripts' );
 
 ?>

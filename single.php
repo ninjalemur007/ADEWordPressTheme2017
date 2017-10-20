@@ -1,9 +1,9 @@
 <?php get_header(); ?>
 <div id="content" class="col-xs-12" aria-labelledby="page_title" >
-    <div id="main" role="main" class="appcenter col-xs-12 col-sm-9"  title="main content">
+    <div id="main" role="main" class="appcenter col-xs-12 col-sm-9"  >
             <div id="pagetitle"><h2><?php the_title(); ?></h2></div>
             <div class="post-header">
-              Published: Published: <?php the_time('F jS, Y') ?>
+              Published: <?php the_time('F jS, Y') ?>
               <div class="sharethis">
                 <a href="https://twitter.com/share" class="twitter-share-button" data-url="<?php the_permalink(); ?>"
                 data-dnt="true"

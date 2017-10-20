@@ -1,4 +1,4 @@
-=== ADETheme2016 ===
+=== azdeptofed ===
 Contributors: Arizona Department of Education IT Division
 Version: 1.8.2
 NOTE: Don't forget to update the stylesheet version number in the enqueue function!!!
@@ -18,6 +18,8 @@ Updated:
   - Added caption to featured image in single.php template
   - Added "Published: " before date in post and page templates
   - Changed font size for .wp-caption-text (from 1.1rem to .75em)
+  - Footer: now auto-updates copyright year using PHP current year
+  - Added ombudsman notice to footer
 
 = 1.8.1 =
 * Released: July 17, 2017

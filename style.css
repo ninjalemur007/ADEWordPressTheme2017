@@ -1,11 +1,11 @@
 /*
-Theme Name: ADE Theme 2016
+Theme Name: DEVELOPMENT - ADE Theme 2016
 Author: Arizona Department of Education
 Description: Updated theme for Arizona Department of Education that introduces responsive features, a simplified framework, meets accessibility standards, and upgrades the site's styles.
 Version: 1.8.2
 License: GNU General Public License
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: ADETheme2016
+Text Domain: azdeptofed
 Domain Path: /languages/
 */
 
@@ -2119,18 +2119,18 @@ ul.tabtitles {
 
 /*** TABLE SHORTCODE STYLES ***/
 
-.adethemetable {
+.ThemeADEtable {
     margin: 1.5em auto;
     width: 100%;
     border: solid 1px #b2b7c2;
     border-collapse: collapse;
 }
-.adethemetable td {
+.ThemeADEtable td {
     border: solid 1px #b2b7c2 !important;
     border-collapse: collapse;
     padding: 0.2em;
 }
-.adethemetable th {
+.ThemeADEtable th {
     font-weight: bold;
     background-color: #054b80;
     color: #ffffff;
@@ -2153,7 +2153,7 @@ ul.tabtitles {
 	background-color: #054b80 !important;
 }
 
-.adethemetable caption {
+.ThemeADEtable caption {
 	background-color: #e5e7ea;
 	color: #011136;
 	padding: .35em;
