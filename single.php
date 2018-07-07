@@ -25,8 +25,7 @@
                 if ( has_post_thumbnail( ) ) : the_post_thumbnail('medium', array( 'class' => 'alignleft' ) );
               endif;
               ?> <div class="featured-image-caption"> <?php
-                if ( has_post_thumbnail( ) ) : the_post_thumbnail_caption( array( 'class' => 'alignleft') );
-              endif;
+                echo get_post( get_post_thumbnail_id() )->post_excerpt;
               ?> </div>
             </div>
         <?php the_content(); ?>

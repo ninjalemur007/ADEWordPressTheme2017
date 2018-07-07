@@ -10,7 +10,7 @@
 			&copy; <?php echo date("Y"); ?> Arizona Department of Education
 		</div>
 		<div class="footer-text footer-right">
-			<span class="footer-icons"><a href="/adeinfo/feedback" aria-label="Feedback"><i class="fa fa-envelope"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/azedschools" aria-label="ADE on Twitter"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/AZDeptofEducation" aria-label="ADE on Facebook"><i class="fa fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/azedschools/" aria-label="ADE on Instagram"><i class="fa fa-instagram"></i></a></span><br>Engage with ADE
+			<span class="footer-icons"><a href="/adeinfo/contact" aria-label="Feedback"><i class="fa fa-envelope"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://twitter.com/azedschools" aria-label="ADE on Twitter"><i class="fa fa-twitter"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://www.facebook.com/AZDeptofEducation" aria-label="ADE on Facebook"><i class="fa fa-facebook"></i></a>&nbsp;&nbsp;&nbsp;<a href="https://www.instagram.com/azedschools/" aria-label="ADE on Instagram"><i class="fa fa-instagram"></i></a></span><br>Engage with ADE
 		</div>
 	</footer><!-- #ade-footer -->
  <?php wp_footer(); ?>

@@ -35,12 +35,12 @@ console.log(tablistid + " is a tab group");
         $(this).attr("aria-labelledby", labelval);
         });
 
-        var tabheaders = tablist.find("li[role=tab]");
-        var tabpanels = tablist.find("div[class=tabpanel-content]");
+        var tabheaders = thisset.find("li[role=tab]");
+        var tabpanels = thisset.find("div[class=tabpanel-content]");
         var tabpanelheight = tabpanels.eq(0).height();
         var tabheadersheight = tabheaders.height() + 30;
         var totalheight = tabpanelheight + tabheadersheight;
-        tablist.height(totalheight);
+        thisset.height(totalheight);
 
   } else if (tablist.hasClass("adeaccordion") ) {
 

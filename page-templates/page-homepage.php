@@ -14,6 +14,9 @@
 <div id="content" class="col-xs-12" aria-labelledby="page_title" >
   <main id="main" class="site-main" role="main">
 
+    <!-- MESSAGE - moved to this location on 10/19/17 per MB -->
+    <?php echo do_shortcode("[ade-homepage-widgets-message]"); ?>
+
     <!-- LEFTWRAP -->
     <div id="leftwrap" class="col-xs-12 col-md-8">
       <?php echo do_shortcode("[ade-homepage-widgets-features]"); ?>
@@ -33,7 +36,11 @@
     <!-- MIDDLEWRAP -->
     <div id="middlewrap" class="col-xs-12">
 
-          <?php echo do_shortcode("[ade-homepage-widgets-message]"); ?>
+      <?php
+      // Original location of message section - MB ordered move to top on 10/19/17
+      // echo do_shortcode("[ade-homepage-widgets-message]");
+
+      ?>
 
 
       <section id="ade-home-quicklinks" class="col-xs-12" aria-labelledby="quicklinkstitle">

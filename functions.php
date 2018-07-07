@@ -102,10 +102,10 @@ function ade16_register_ubermenu_skins(){
    if( function_exists( 'ubermenu_register_skin' ) ){
       $skin_slug1 = 'ade1';       //replace with your skin slug
       $skin_name1 = '[ADE Theme 2016] ADE 1';   //Replace with the name of your skin (visible to users)
-      $skin_path1 = get_stylesheet_directory_uri() . '/css/ade1.css';  //Replace with path to the custom skin in your theme
+      $skin_path1 = get_stylesheet_directory_uri() . '/css/ade1.min.css';  //Replace with path to the custom skin in your theme
       $skin_slug2 = 'ade2';       //replace with your skin slug
       $skin_name2 = '[ADE Theme 2016] ADE 2';   //Replace with the name of your skin (visible to users)
-      $skin_path2 = get_stylesheet_directory_uri() . '/css/ade2.css';  //Replace with path to the custom skin in your theme
+      $skin_path2 = get_stylesheet_directory_uri() . '/css/ade2.min.css';  //Replace with path to the custom skin in your theme
       ubermenu_register_skin( $skin_slug1 , $skin_name1 , $skin_path1 );
       ubermenu_register_skin( $skin_slug2 , $skin_name2 , $skin_path2 );
    }
@@ -362,7 +362,7 @@ function modal_content($atts, $content = null) {
     extract(shortcode_atts(array(
         'id' => 'content-id',
         ), $atts));
-    return '<div tabindex="0" class="modalbox modalboxview" title="modal window" id="modalcontent_'.$id.'"><div id="closemodal" class="closex" title="close modal window" tabindex="0"><img src="'. get_theme_root_uri() .'/azdeptofed/includes/xclose-75opacity.png" class="ximage" /></div>' .do_shortcode($content). '</div>';
+    return '<div tabindex="0" class="modalbox modalboxview" title="modal window" id="modalcontent_'.$id.'"><div id="closemodal" class="closex" title="close modal window" tabindex="0"><img src="'. get_template_directory_uri() .'/includes/xclose-75opacity.png" class="ximage" /></div>' .do_shortcode($content). '</div>';
 }
 add_shortcode('modalcontent', 'modal_content');
 /* Use like this --> [modalcontent id="word"]content goes here[/modalcontent] */
@@ -375,7 +375,7 @@ function floating_modal_content($atts, $content = null) {
         'top' => '25%',
         'left' => '25%',
         ), $atts));
-    return '<div tabindex="0" class="modalbox floatingbox modalboxview" title="modal window" style="width: ' . $width .'; height: ' . $height .'; top: ' . $top . '; left: '. $left . ';" id="modalcontent_'.$id.'"><div id="closemodal" class="closex" title="close modal window" tabindex="0"><img src="'. get_theme_root_uri() .'/azdeptofed/includes/xclose-75opacity.png" class="ximage" /></div>' .do_shortcode($content) . '</div><div class="grayout"></div>';
+    return '<div tabindex="0" class="modalbox floatingbox modalboxview" title="modal window" style="width: ' . $width .'; height: ' . $height .'; top: ' . $top . '; left: '. $left . ';" id="modalcontent_'.$id.'"><div id="closemodal" class="closex" title="close modal window" tabindex="0"><img src="'. get_template_directory_uri() .'/includes/xclose-75opacity.png" class="ximage" /></div>' .do_shortcode($content) . '</div><div class="grayout"></div>';
 }
 add_shortcode('floating-modalcontent', 'floating_modal_content');
 
@@ -732,12 +732,12 @@ function add_template_data( $column ) { //show the page template
 **/
 function azdeptofed_theme_scripts(){
   wp_enqueue_style( 'bootstrap-css', get_template_directory_uri() . '/includes/bootstrap/css/bootstrap.min.css', array(), '3.3.4', 'all' );
-  wp_enqueue_style( 'azdeptofed-style', get_stylesheet_uri(), array(), '1.8.2', 'all' );
+  wp_enqueue_style( 'azdeptofed-style', get_template_directory_uri() . '/style.min.css', array(), '1.8.2', 'all' );
   wp_enqueue_script( 'bootstrap-js', get_template_directory_uri() . '/includes/bootstrap/js/bootstrap.min.js', array( 'jquery' ), '3.3.4', true );
   wp_enqueue_style('fontawesome', get_template_directory_uri() . '/includes/fontawesome/css/font-awesome.min.css');
   wp_deregister_script('jquery');
   wp_enqueue_script( 'jquery' , get_template_directory_uri() . '/js/jquery/dist/jquery.min.js');
-  wp_enqueue_script('js-scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), false, true );
+  wp_enqueue_script('js-scripts', get_template_directory_uri() . '/js/scripts.min.js', array('jquery'), false, true );
 	wp_enqueue_script('twitter-setup', get_template_directory_uri() . '/js/twitter-setup.js', array(), false, true );
 	wp_enqueue_script('facebook-setup', get_template_directory_uri() . '/js/facebook-setup.js', array(), false, true );
 }

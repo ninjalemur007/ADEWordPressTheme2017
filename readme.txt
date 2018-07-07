@@ -2,13 +2,14 @@
 Contributors: Arizona Department of Education IT Division
 Version: 1.8.2
 NOTE: Don't forget to update the stylesheet version number in the enqueue function!!!
-Updated:
+Updated: December 26, 2017
 
 == Changelog ==
 
 = 1.8.2 =
-* Released:
+* Released: December 26, 2017
 * Changes:
+  - edited scripts.js, lines 38 - 43, replacing 'tablist' with 'thisset', bringing actions back into the function
   - single.php template now uses 'medium' for post_thumbnail size
   - added image alignment classes from WordPress
   - Fixed some accessibility issues
@@ -20,6 +21,8 @@ Updated:
   - Changed font size for .wp-caption-text (from 1.1rem to .75em)
   - Footer: now auto-updates copyright year using PHP current year
   - Added ombudsman notice to footer
+  - change twitter card type to <meta name="twitter:card" content="summary_large_image" />
+  - minified css and js files and updated references to load minified files
 
 = 1.8.1 =
 * Released: July 17, 2017
